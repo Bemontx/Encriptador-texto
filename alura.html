@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./alura.js"></script>
+    <link rel="stylesheet" href="./alura.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- contenedor-principal -->
+    <div class="contenedor-principal">
+      <div class="encriptador">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aquí"
+        ></textarea>
+        <div class="terminos">
+          <p>Solo texto en minúsculas</p>
+        </div>
+        <!-- botones -->
+        <div class="botones">
+          <button class="boton-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <input
+            type="button"
+            class="boton-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
+        </div>
+      </div>
+      <!-- texto-encriptado -->
+      <div class="encriptado">
+        <img src="./logo.png" alt="" id="logo" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningún msj fue encontrado</h2>
+          <p id="parrafo"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
